@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/css?family=Henny+Penny); 
+@import url(http://fonts.googleapis.com/css?family=Medula+One);
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
+
+body {
+  padding-bottom: 40;
+  color: #7A4432;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-family: 'Henny Penny', cursive;
+  font-size: 25px !important;
+  color: #E65CB8 !important;
+}
+
+.carousel {
+  margin-bottom: 10px
+}
+
+.carousel .item {
+  height: 400px;
+  background-color: #9C624B;
+}
+  
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 400px
+}
+
+.subheader {
+  font-family: 'Henny Penny';
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 30px
+}
+
+.thumbnail {
+  border-radius: 4px;
+}
+
+.thumbnail h4 {
+  text-align: center;
+} 
+
+.featurette-divider {
+  margin: 5px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette {
+  padding-top: 20px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -20px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-family: 'Medula One', cursive;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.lead {
+  font-family: 'Cinzel', cursive;
+  color: #E65CB8
+}
+
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+}
+
+
+
+ 
